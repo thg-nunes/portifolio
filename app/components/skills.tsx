@@ -71,7 +71,7 @@ export const Skills = (): JSX.Element => {
         <p className="text-xs lg:text-base">React-Native</p>
       </section>
       <section className="flex w-max animate-floating flex-col items-center px-2">
-        <SiExpo className="h-10 w-10 text-white md:w-14 lg:h-14 lg:w-14" />
+        <SiExpo className="h-10 w-10 text-blue-950 dark:text-white md:w-14 lg:h-14 lg:w-14" />
         <p className="text-xs lg:text-base">Expo</p>
       </section>
       <section className="flex w-max animate-floating flex-col items-center px-2">

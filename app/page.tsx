@@ -576,7 +576,7 @@ export default function Home() {
 
       <div className="md:-x0 bg-gray-200 px-4 py-16 dark:bg-blue-950" id="contato">
         <section className="mx-auto mb-10 flex max-w-7xl flex-col items-center gap-4">
-          <p className="w-max rounded-full bg-gray-700 px-5 py-1 text-xs font-semibold text-white/70 dark:bg-gray-300 dark:text-blue-950">
+          <p className="w-max rounded-full bg-gray-300 px-5 py-1 text-xs font-semibold text-blue-950 dark:bg-gray-700 dark:text-white">
             Contato
           </p>
           <p className="text-center text-sm font-semibold text-blue-950 dark:text-white/70 md:w-3/4 md:text-base">
