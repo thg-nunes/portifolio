@@ -7,29 +7,10 @@ import { Skills } from './components/skills'
 import { LinkToProject } from './components/linkToProject'
 import { Contact } from './components/contact'
 import { GoTop } from './components/goTop'
-import { AppMode } from './components/appMode'
-import { NavList } from './components/navList'
 
 export default function Home() {
   return (
     <main className="bg-white text-blue-950 dark:bg-black dark:text-white">
-      <div className="relative mx-auto flex h-10 max-w-7xl justify-between border-b border-gray-700 px-4">
-        <p className="text-xl font-bold leading-10">{`</>`}</p>
-        <section className="flex flex-row-reverse items-center gap-4 md:flex-row">
-          <NavList />
-          <div className="hidden h-5 border border-blue-950 dark:border-white md:block" />
-          <div className="flex items-center gap-2 border-blue-950/70">
-            <AppMode />
-            <a
-              download
-              href="/Currículo-thiago-nunes.pdf"
-              className="hidden rounded-full bg-blue-950 p-1 px-3 text-xs font-bold capitalize text-white hover:bg-gray-700 hover:transition-all hover:duration-200 dark:bg-white dark:text-gray-800  dark:hover:bg-white/80 md:block"
-            >
-              donload CV
-            </a>
-          </div>
-        </section>
-      </div>
       <div className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between px-4 py-10 md:flex-row">
         <section className="flex w-3/4 flex-col gap-8 md:gap-12 md:py-12">
           <Presentation />

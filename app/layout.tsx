@@ -1,5 +1,8 @@
-import './globals.css'
+import { LinkComponent } from './components/liink'
 import { Inter } from 'next/font/google'
+
+import { appRoutes } from '@/src/utils/appRouts'
+import './globals.css'
 
 // export const metadata = {
 //   title: 'Create Next App',
@@ -11,7 +14,32 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '600', '700'] })
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav className="border-b border-gray-700">
+          <section className="relative mx-auto flex max-w-7xl justify-between px-4 py-1">
+            <span className="text-xl font-bold leading-10">{`<thg />`}</span>
+            <ul className="flex flex-row-reverse items-center gap-4 md:flex-row">
+              {appRoutes.map(({ elementId, linkText }) => (
+                <li className="cursor-pointer px-3 text-center font-semibold leading-10 text-blue-950 duration-300 hover:bg-gray-450 hover:text-white dark:text-white md:hover:bg-gray-700">
+                  <LinkComponent elementId={elementId} linkText={linkText} />
+                </li>
+              ))}
+
+              <li className="hidden h-5 border border-blue-950 md:block" />
+              <li className="flex items-center gap-2 border-blue-950/70">
+                <a
+                  download
+                  href="/Currículo-thiago-nunes.pdf"
+                  className="hidden rounded-full bg-blue-950 p-1 px-3 text-xs font-bold capitalize text-white hover:bg-gray-700 hover:transition-all hover:duration-200 dark:bg-white dark:text-gray-800  dark:hover:bg-white/80 md:block"
+                >
+                  donload CV
+                </a>
+              </li>
+            </ul>
+          </section>
+        </nav>
+        {children}
+      </body>
     </html>
   )
 }
