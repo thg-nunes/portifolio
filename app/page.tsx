@@ -121,9 +121,11 @@ export default function Home() {
             Aqui está um rápido resumo das minhas experiências mais recentes
           </p>
         </section>
-        <section className="mx-auto flex flex-col justify-between gap-4 rounded-md bg-gray-50 p-8 shadow-md dark:bg-gray-800 md:w-3/4 md:flex-row md:gap-0">
+        <section className="mx-auto flex flex-col justify-between gap-4 rounded-md bg-gray-50 p-8 shadow-md md:w-3/4 md:flex-row md:gap-0">
           <p className="text-2xl font-bold text-green-550">JUCEMA</p>
-          <p className="text-bold block text-sm md:hidden">Maio de 2021 - Atual</p>
+          <p className="text-bold block text-sm md:hidden">
+            Maio de 2021 - Abril de 2024
+          </p>
           <div className="md:w-2/4">
             <p className="mb-3 text-xl font-semibold">Estagiário Front-End Developer</p>
             <ul className="flex flex-col gap-3 text-sm text-blue-950/70 dark:text-white/70">
@@ -178,7 +180,9 @@ export default function Home() {
               </ul>
             </ul>
           </div>
-          <p className="text-bold hidden text-sm md:block">Maio de 2021 - Atual</p>
+          <p className="text-bold hidden text-sm md:block">
+            Maio de 2021 - Abril de 2024
+          </p>
         </section>
       </div>
 
