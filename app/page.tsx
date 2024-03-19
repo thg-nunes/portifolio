@@ -10,8 +10,8 @@ import { GoTop } from './components/goTop'
 
 export default function Home() {
   return (
-    <main className="bg-white text-blue-950 dark:bg-black dark:text-white">
-      <div className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between px-4 py-10 md:flex-row">
+    <main>
+      <div className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between px-4 py-10 text-white md:flex-row">
         <section className="flex w-3/4 flex-col gap-8 md:gap-12 md:py-12">
           <Presentation />
           <Locale />
@@ -104,9 +104,9 @@ export default function Home() {
           <p className="w-max rounded-full bg-gray-300 px-5 py-1 text-xs font-semibold text-gray-700 dark:bg-gray-700 dark:text-white/70">
             Habilidades
           </p>
-          <p className="text-center text-blue-950/70 dark:text-white/70 md:w-3/4">
-            As habilidades, ferramentas e tecnologias nas quais sou muito bom ou que tenho
-            algum conhecimento
+          <p className="text-center text-white md:w-3/4">
+            Aqui estão algumas das ferramentas e tecnologias nas quais sou muito bom ou
+            que tenho algum conhecimento
           </p>
         </section>
         <Skills />
