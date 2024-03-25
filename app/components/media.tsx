@@ -1,25 +1,18 @@
-'use client'
-import { GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
+import { AnchorHTMLAttributes, ReactElement } from 'react'
 
-export const Media = (): JSX.Element => {
+type MediaProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
+  icon: ReactElement
+  description: string
+}
+
+export const Media = ({ icon, description, ...rest }: MediaProps): JSX.Element => {
   return (
-    <div className="flex w-max items-center gap-2 text-white">
-      <a
-        href="https://github.com/thg-nunes"
-        target="_blank"
-        className="flex items-center gap-2 overflow-hidden hover:opacity-80 hover:transition-all hover:duration-150"
-      >
-        <GithubLogo size={24} weight="bold" />
-        <span className="right-0 text-xs font-semibold capitalize">github</span>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/thiago-nunes-3a7771219/"
-        className="flex items-center gap-2 overflow-hidden hover:opacity-80 hover:transition-all hover:duration-150"
-        target="_blank"
-      >
-        <LinkedinLogo size={24} weight="bold" />
-        <span className="right-0 text-xs font-semibold capitalize">linkedin</span>
-      </a>
-    </div>
+    <a
+      className="flex cursor-pointer items-center gap-2 overflow-hidden hover:opacity-80 hover:transition-all hover:duration-150"
+      {...rest}
+    >
+      {icon}
+      <span className="right-0 text-xs font-semibold capitalize">{description}</span>
+    </a>
   )
 }
