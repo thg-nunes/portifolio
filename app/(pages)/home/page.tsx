@@ -3,6 +3,7 @@ import { GithubLogo, LinkedinLogo, HandWaving } from '@phosphor-icons/react/dist
 
 import { Media } from '@/app/components/media'
 import { Experiences } from '@/app/components/experiences'
+import { Job } from '@/app/components/job'
 
 export default function Home() {
   return (
@@ -51,7 +52,7 @@ export default function Home() {
           <p className="w-max rounded-full bg-gray-300 px-5 py-1 text-xs font-semibold text-gray-700 lg:text-xl">
             Experiências
           </p>
-          <p className="text-centertext-blue-950/70 dark:text-white/70 md:w-3/4 md:text-center">
+          <p className="text-center text-blue-950/70 dark:text-white/70 md:w-3/4 md:text-center">
             Aqui está um rápido resumo das minhas experiências mais recentes
           </p>
         </section>
@@ -71,6 +72,46 @@ export default function Home() {
             result:
               'O painel empresarial foi lançado com sucesso e foi um dos serviços que serviu como modelo para as demais Juntas comerciais do país na construção de um portal nacional informações.',
           }}
+        />
+      </div>
+
+      <div className="space-y-20 lg:py-8 " id="trabalhos">
+        <section className="mx-auto mb-10 flex max-w-7xl flex-col items-center gap-4">
+          <p className="w-max rounded-full bg-gray-300 px-5 py-1 text-xs font-semibold text-gray-700 lg:text-xl">
+            Trabalhos
+          </p>
+          <p className="text-center text-white md:w-3/4 md:text-center">
+            Aqui estão alguns dos projetos os quais já fiz ou participei
+          </p>
+        </section>
+        <Job
+          jobName="Painel de Empresas do Maranhao"
+          shortDesctiption="Painel de dados estatísticos da Junta Comercial do Estado do Maranhão - JUCEMA."
+          projectSrc="/painel__estatisticas.png"
+          jobLink="http://estatisticas.jucema.ma.gov.br/estatisticas"
+          tasks={['Design do Sistema', 'Implementação do Layout', 'Manutenção']}
+        />
+
+        <Job
+          itemsDirection="reverse"
+          projectSrc="/painel_caged.png"
+          jobName="Painel de Empregogs do Formais"
+          shortDesctiption="Painel de empregos formais do Maranhão feito para a JUCEMA."
+          jobLink="http://caged.jucema.ma.gov.br/empregos/formais"
+          tasks={['Design do Sistema', 'Implementação do Layout', 'Mudança de Framework']}
+        />
+
+        <Job
+          jobName="Página de relatórios"
+          projectSrc="/pagina_de_relatorios.png"
+          shortDesctiption="Projeto feito para gerenciar os relatórios mensais de empregos e empresas."
+          jobLink="https://www.figma.com/file/InevirOT1PmXQAIgL0UQ1M/P%C3%A1gina-Relat%C3%B3rios?type=design&node-id=0%3A1&mode=design&t=xc5cN7AxV5exS1Ne-1"
+          tasks={[
+            'Design do Sistema',
+            'Implementação do Layout',
+            'Mudança de Layout',
+            'Autenticação',
+          ]}
         />
       </div>
       {/* <footer>
