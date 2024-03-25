@@ -24,17 +24,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <LinkComponent elementId={elementId} linkText={linkText} />
                 </li>
               ))}
-
-              <li className="hidden h-5 border border-blue-950 md:block" />
-              <li className="flex items-center gap-2 border-blue-950/70">
-                <a
-                  download
-                  href="/Currículo-thiago-nunes.pdf"
-                  className="hidden rounded-full bg-blue-950 p-1 px-3 text-xs font-bold capitalize text-white hover:bg-gray-700 hover:transition-all hover:duration-200 dark:bg-white dark:text-gray-800  dark:hover:bg-white/80 md:block"
-                >
-                  donload CV
-                </a>
-              </li>
             </ul>
           </section>
         </nav>
