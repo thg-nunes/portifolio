@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { GithubLogo, LinkedinLogo, HandWaving } from '@phosphor-icons/react/dist/ssr'
 
 import { Media } from '@/app/components/media'
+import { Experiences } from '@/app/components/experiences'
 
 export default function Home() {
   return (
@@ -43,6 +44,33 @@ export default function Home() {
           height={240}
           className="size-60 rounded-full border-[4px] border-solid border-white dark:border-black"
           alt="minha foto de usuário"
+        />
+      </div>
+      <div className="bg-gray-200 px-4 py-16 md:px-0" id="experiencias">
+        <section className="mx-auto mb-10 flex max-w-7xl flex-col items-center gap-4">
+          <p className="w-max rounded-full bg-gray-300 px-5 py-1 text-xs font-semibold text-gray-700 lg:text-xl">
+            Experiências
+          </p>
+          <p className="text-centertext-blue-950/70 dark:text-white/70 md:w-3/4 md:text-center">
+            Aqui está um rápido resumo das minhas experiências mais recentes
+          </p>
+        </section>
+        <Experiences
+          company="JUCEMA"
+          date={{
+            start: 'Maio de 2021',
+            end: 'Abril de 2024',
+          }}
+          jobFunction="Estagiário Front-End"
+          jobInfo={{
+            situation:
+              'A empresa precisava atualizar uma página de dados estatísticos usada para obter algumas informações',
+            action:
+              'Projetei a interface do usuário, escrevi código front-end e back-end, eotimizei o desempenho do site usando cache de requisições.',
+            task: 'Desenvolvimento de um site responsivo usando ReactJs integrado com uma api conectada ao banco de dados Pinot',
+            result:
+              'O painel empresarial foi lançado com sucesso e foi um dos serviços que serviu como modelo para as demais Juntas comerciais do país na construção de um portal nacional informações.',
+          }}
         />
       </div>
       {/* <footer>
