@@ -1,5 +1,13 @@
 export const appRoutes = [
   {
+    elementId: 'sobre-mim',
+    linkText: 'Sobre',
+  },
+  {
+    elementId: 'habilidades',
+    linkText: 'Habilidades',
+  },
+  {
     elementId: 'experiencias',
     linkText: 'Experiencia',
   },

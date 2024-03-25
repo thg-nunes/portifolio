@@ -7,6 +7,7 @@ import { Job } from '@/app/components/job'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsTelephone } from 'react-icons/bs'
 import { GoTop } from '@/app/components/goTop'
+import { Skills } from '@/app/components/skills'
 
 export default function Home() {
   const year = new Date().getFullYear()
@@ -120,8 +121,22 @@ export default function Home() {
         />
       </div>
 
+      <div className="bg-gray-200 px-4 py-16" id="habilidades">
+        <section className="mx-auto mb-10 flex max-w-7xl flex-col items-center gap-4">
+          <p className="w-max rounded-full bg-gray-300 px-5 py-1 text-xs font-semibold text-gray-700 lg:text-xl">
+            Habilidades
+          </p>
+          <p className="text-center text-blue-950 md:w-3/4 md:text-center">
+            Aqui estão algumas das ferramentas e tecnologias nas quais sou muito bom ou
+            que tenho algum conhecimento
+          </p>
+        </section>
+
+        <Skills />
+      </div>
+
       <footer
-        className="flex flex-col items-center space-y-6 bg-gray-200 px-4 py-16 md:px-0"
+        className="flex flex-col items-center space-y-6 px-4 py-16 text-white md:px-0"
         id="contato"
       >
         <section className="mx-auto flex max-w-7xl items-center justify-center gap-3">
