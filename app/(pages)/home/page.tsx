@@ -6,6 +6,7 @@ import { Experiences } from '@/app/components/experiences'
 import { Job } from '@/app/components/job'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsTelephone } from 'react-icons/bs'
+import { GoTop } from '@/app/components/goTop'
 
 export default function Home() {
   const year = new Date().getFullYear()
@@ -79,7 +80,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="space-y-20 lg:py-8 " id="trabalhos">
+      <div className="space-y-20 lg:py-8" id="trabalhos">
         <section className="mx-auto mb-10 flex max-w-7xl flex-col items-center gap-4">
           <p className="w-max rounded-full bg-gray-300 px-5 py-1 text-xs font-semibold text-gray-700 lg:text-xl">
             Trabalhos
@@ -119,7 +120,10 @@ export default function Home() {
         />
       </div>
 
-      <footer className="flex flex-col items-center space-y-6 bg-gray-200 px-4 py-16 md:px-0">
+      <footer
+        className="flex flex-col items-center space-y-6 bg-gray-200 px-4 py-16 md:px-0"
+        id="contato"
+      >
         <section className="mx-auto flex max-w-7xl items-center justify-center gap-3">
           <div className="flex items-center gap-2">
             <AiOutlineMail className="h-7 w-7" />
@@ -144,6 +148,7 @@ export default function Home() {
         <p>Feito por: Thiago Nunes</p>
         <span>Copyright ©{year} All rights reserved </span>
       </footer>
+      <GoTop />
     </main>
   )
 }
