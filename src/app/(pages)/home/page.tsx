@@ -1,16 +1,12 @@
 import Image from 'next/image'
-import { AiOutlineMail } from 'react-icons/ai'
-import { GithubLogo, LinkedinLogo, HandWaving } from '@phosphor-icons/react/dist/ssr'
+import { HandWaving } from '@phosphor-icons/react/dist/ssr'
 
 import { Job } from '../../components/job'
 import { GoTop } from '../../components/goTop'
-import { Media } from '../../components/media'
 import { Skills } from '../../components/skills'
 import { Experiences } from '../../components/experiences'
 
 export default function Home() {
-  const year = new Date().getFullYear()
-
   return (
     <main>
       <div className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between px-4 py-10 text-white md:flex-row">
@@ -133,35 +129,6 @@ export default function Home() {
 
         <Skills />
       </div>
-
-      <footer
-        className="flex flex-col items-center space-y-6 px-4 py-16 text-white md:px-0"
-        id="contato"
-      >
-        <section className="mx-auto flex max-w-7xl items-center justify-center gap-3">
-          <div className="flex items-center gap-2">
-            <AiOutlineMail className="h-7 w-7" />
-            desenvolvedor.nunes@gmail.com
-          </div>
-
-          <section className="flex gap-3">
-            <Media
-              target="_blank"
-              description="github"
-              href="https://github.com/thg-nunes"
-              icon={<GithubLogo size={24} weight="bold" />}
-            />
-            <Media
-              target="_blank"
-              description="linkedin"
-              href="https://www.linkedin.com/in/thiago-nunes-3a7771219/"
-              icon={<LinkedinLogo size={24} weight="bold" />}
-            />
-          </section>
-        </section>
-        <p>Feito por: Thiago Nunes</p>
-        <span>Copyright ©{year} All rights reserved </span>
-      </footer>
       <GoTop />
     </main>
   )
