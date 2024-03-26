@@ -1,13 +1,12 @@
 import Image from 'next/image'
+import { AiOutlineMail } from 'react-icons/ai'
 import { GithubLogo, LinkedinLogo, HandWaving } from '@phosphor-icons/react/dist/ssr'
 
-import { Media } from '@/app/components/media'
-import { Experiences } from '@/app/components/experiences'
-import { Job } from '@/app/components/job'
-import { AiOutlineMail } from 'react-icons/ai'
-import { BsTelephone } from 'react-icons/bs'
-import { GoTop } from '@/app/components/goTop'
-import { Skills } from '@/app/components/skills'
+import { Job } from '../../components/job'
+import { GoTop } from '../../components/goTop'
+import { Media } from '../../components/media'
+import { Skills } from '../../components/skills'
+import { Experiences } from '../../components/experiences'
 
 export default function Home() {
   const year = new Date().getFullYear()

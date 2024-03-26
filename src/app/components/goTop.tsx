@@ -1,5 +1,4 @@
 'use client'
-import { useEffect } from 'react'
 import { BiArrowToTop } from 'react-icons/bi'
 import { animateScroll } from 'react-scroll'
 
