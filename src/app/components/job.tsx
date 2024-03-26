@@ -36,12 +36,12 @@ export const Job = ({
           ))}
         </div>
         <p>{shortDesctiption}</p>
-        <a href={jobLink} target="_blank" className="w-max hover:underline">
-          ver prrojeto
+        <a href={jobLink} className="w-max hover:underline">
+          ver projeto
         </a>
       </section>
 
-      <a href={jobLink} target="_blank" className="group relative">
+      <a href={jobLink} className="group relative">
         <span className="absolute hidden h-full w-full bg-black/25 text-white group-hover:block" />
         <Image
           width={464}

@@ -89,7 +89,7 @@ export default function Home() {
           jobName="Painel de Empresas do Maranhao"
           shortDesctiption="Painel de dados estatísticos da Junta Comercial do Estado do Maranhão - JUCEMA."
           projectSrc="/painel__estatisticas.png"
-          jobLink="http://estatisticas.jucema.ma.gov.br/estatisticas"
+          jobLink="/projetos/estatisticas"
           tasks={['Design do Sistema', 'Implementação do Layout', 'Manutenção']}
         />
 
