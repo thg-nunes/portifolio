@@ -34,7 +34,7 @@ export default function Home() {
           </div>
           <a
             download
-            href="/Currículo-thiago-nunes.pdf"
+            href="/currículo-front-end.pdf"
             className="hidden w-max rounded-md bg-rose-500 p-2 px-6 text-xs font-bold capitalize text-white hover:bg-rose-500/80 hover:transition-all hover:duration-200 md:block lg:text-base"
           >
             donload CV
