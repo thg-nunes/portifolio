@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
+import { GoAlertFill } from 'react-icons/go'
 
 export const metadata: Metadata = {
   title: 'Projeto - Painel de Empresas',
@@ -87,6 +88,70 @@ export default function CompanyStatistics(): JSX.Element {
           de filtros de busca da página(até então só podia selecionar uma opção por
           filtro).
         </p>
+      </div>
+      <div className="mx-auto space-y-3 text-white lg:w-3/4">
+        <span className="font-semibold lg:text-2xl">Estratégia e Planejamento</span>
+        <p>
+          Até aquele momente eu nunca tinha acriado um layout nem uma aplicação web, então
+          eu planejei os seguintes passos: 1) preciso criar um layout para que seja
+          analisado 2) com o layout aprovado preciso buscar as ferramentas que posso usar
+          para implementa-lo.
+        </p>
+
+        <section>
+          <span className="font-semibold lg:text-2xl">Pesquisa de Layouts</span>
+          <p>
+            Comecei a buscar modelos de dashboards que apresentavam dados estatísticos,
+            fui anotando os pontos em comum e até mesmo tirei algumas informações da
+            página que já estava implementada e que poderiam ser mantidas.
+          </p>
+
+          <div className="rounded-md p-9 font-semibold">
+            <span className="mb-3 block lg:text-xl">Descoberta</span>
+            <ul className="list-disc space-y-3 px-6 lg:text-sm">
+              <li>Os gráficos mais usados: Barra | Linha | Pizza</li>
+              <li>
+                Ajuste no layout: São mais usados em forma de coluna, ou seja, um abaixo
+                do outro
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <span className="font-semibold lg:text-2xl">
+            Desenvolvimento e Implementação
+          </span>
+
+          <div className="rounded-md p-9">
+            <span className="mb-3 block lg:text-xl">Ferramentas</span>
+            <ul className="mb-6 list-disc space-y-3 px-6 lg:text-sm">
+              <li>
+                Do layout: com os pontos cruciais anotados, dei início ao desenvolvimento
+                do layout. Usei o <span className="font-semibold">figma</span> para criar
+                o protótipo da página, nesse processo obtive ajuda de um colega da equipe
+                e demorei pouco menos de 1 semana para entregar um primeiro resultado, e
+                ao longo desse processo tive várias negações para o protótipo, houveram
+                vários reajustes e fui aprendendo como a ferramenta funcionava (confesso
+                que foi divertido).
+              </li>
+              <li>
+                Da implementação: para implementar o layout, usei o framework{' '}
+                <span className="font-semibold">ReactJS</span> para dar vida ao projeto,
+                sobre o framework a usar, já tinha sido decidido pelo colega de equipe,
+                pois ele tinha algum conhecimento sobre, e caso precisasse de alguma
+                ajuda, ele saberia o que fazer.;
+              </li>
+            </ul>
+            <p className="bg-gray-200 p-3 font-semibold text-blue-950">
+              <GoAlertFill className="mr-3 inline size-6 text-yellow-700" />O grade
+              desafio para mim nessa etapa foi desenvolver a implementação do layout, pois
+              assim que comecei eu sabia bem pouco sobre o framework e tive que ir
+              aprendendo muita coisa enquanto fazia a aplicação. Houveram vários erros e
+              problemas os quais passei dias para encontrar um solução, e a cada erro
+              solucionado eu aprendia mais sobre o framework.
+            </p>
+          </div>
+        </section>
       </div>
     </main>
   )
