@@ -98,8 +98,8 @@ export default function CompanyStatistics(): JSX.Element {
           para implementa-lo.
         </p>
 
-        <section>
-          <span className="font-semibold lg:text-2xl">Pesquisa de Layouts</span>
+        <section className="pl-3">
+          <span className="font-semibold lg:text-xl">Pesquisa de Layouts</span>
           <p>
             Comecei a buscar modelos de dashboards que apresentavam dados estatísticos,
             fui anotando os pontos em comum e até mesmo tirei algumas informações da
@@ -117,7 +117,36 @@ export default function CompanyStatistics(): JSX.Element {
             </ul>
           </div>
         </section>
-        <section>
+
+        <section className="pl-3">
+          <span className="font-semibold lg:text-xl">Levantamento de requisítos</span>
+          <p>
+            Para saber quais os requisítos do sistema precisei conversar com o colega de
+            equipe, e após algums minutos foram levanntados os seguintes pontos:
+          </p>
+
+          <div className="rounded-md p-9 font-semibold">
+            <ul className="list-disc space-y-3 px-6 lg:text-sm">
+              <li>
+                O sistema de filtros deve conter a possibilidade de multipla seleção de
+                opções
+              </li>
+              <li>
+                A cada mudança de opções selecionadas, o sistema deve buscar os dados dos
+                gráficos e as opções de filtros disponíveis para uma determinada seleção
+              </li>
+              <li>
+                A aplicação deve conter duas páginas, uma para informações de empresas
+                abertas e outra para informações de empresas ativas
+              </li>
+              <li>
+                Ao virar o ano, as informações presentes no sistema devem permanecer as
+                mesmas do ano anterior até que a data do ano atual seja 05 de fevereiro
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section className="pl-3">
           <span className="font-semibold lg:text-2xl">
             Desenvolvimento e Implementação
           </span>
@@ -152,6 +181,137 @@ export default function CompanyStatistics(): JSX.Element {
             </p>
           </div>
         </section>
+      </div>
+
+      <div className="mx-auto space-y-3 text-white lg:w-3/4">
+        <span className="font-semibold lg:text-2xl">Resultados e Impacto</span>
+        <section className="space-y-3 rounded-md p-9">
+          <p>
+            O usuário agora tinha uma página mais simples e confortável de se obter
+            informações, pois os gráficos e filtros estavam mais bem distribuidos e
+            organizados. Cada gráfico passou a ter um título descritivo do que
+            representava tal informação, e com essas melhorias:
+          </p>
+          <ul className="mb-6 list-disc space-y-3 px-6 lg:text-sm">
+            <li>
+              A página obteve um layout mais atualizado, com novas informações e novos
+              modelos de graficos/filtros.
+            </li>
+            <li>
+              O usuário passou a conseguir obter mais informações sobre empresas
+              abertas/fechadas do estado, uma vez que a combinação de filtros passou a ser
+              muito maior que a página anterior
+            </li>
+            <li>
+              Com a combinação de filtros maior, a quantidade de requisições também
+              aumentou muito, e para resolver esse problema foi adicionado cache para cada
+              requisição que fosse realizada, isso impediria uma sobrecarga no servidor do
+              banco de dados.
+            </li>
+            <li>
+              O tempo para fazer uma determinada avaliação de um respectivo dado(que
+              geralmente é usado para repassar informações para uma empresa de
+              telecomunicação) foi diminuido, e agora é mais rápido de obter as
+              informações necessárias.
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div className="mx-auto space-y-3 text-white lg:w-3/4">
+        <span className="font-semibold lg:text-2xl">Ferramentas usadas</span>
+        <section className="space-y-3 rounded-md p-9">
+          <p>
+            Aqui estão todas as ferramentas as quais utilizei para desenvolver esse
+            projeto:
+          </p>
+          <ul className="mb-6 list-disc space-y-3 px-6 lg:text-sm">
+            <li>
+              <a className="underline" href="https://devdocs.io/javascript/">
+                JavaScript
+              </a>
+            </li>
+            <li>
+              <a className="underline" href="https://www.typescriptlang.org/docs/">
+                TypeScript
+              </a>
+            </li>
+            <li>
+              <a className="underline" href="https://react.dev/">
+                ReactJs
+              </a>
+            </li>
+            <li>
+              <a className="underline" href="https://styled-components.com/docs">
+                Styled-Components
+              </a>
+            </li>
+            <li>
+              <a
+                className="underline"
+                href="https://multiselect-react-dropdown.vercel.app/"
+              >
+                multiselect-react-dropdown
+              </a>
+            </li>
+            <li>
+              <a
+                className="underline"
+                href="https://react.dev/reference/react/useContext"
+              >
+                ContextApi
+              </a>
+            </li>
+            <li>
+              <a className="underline" href="https://axios-http.com/docs/intro">
+                Axios
+              </a>
+            </li>
+            <li>
+              <a
+                className="underline"
+                href="https://tanstack.com/query/latest/docs/framework/react/overview"
+              >
+                @tanstack/react-query
+              </a>
+            </li>
+            <li>
+              <a className="underline" href="https://github.com/apache/echarts">
+                echarts-for-react
+              </a>
+            </li>
+            <li>
+              <a className="underline" href="https://prettier.io/docs/en/index.html">
+                prettier
+              </a>
+            </li>
+            <li>
+              <a className="underline" href="https://eslint.org/docs/latest/">
+                eslint
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div className="mx-auto space-y-3 text-white lg:w-3/4">
+        <span className="font-semibold lg:text-2xl">O que Aprendi</span>
+        <ul className="space-y-3 pl-3">
+          <li>
+            1 - <span className="font-semibold">Planejamento é essencial:</span> com o
+            primeiro contato com o desenvolvimento de software que iria para produção, não
+            poderia simplismente implementar o layout sem antes ter metas estabelecidas,
+            conhecimennto sobre o que a empresa queria ou sem saber quais requisitos
+            deveriam ser seguidos
+          </li>
+          <li>
+            2 - <span className="font-semibold">Peça ajuda quando necessário: </span>
+            por vários momentos no início do projeto enfrentei dificuldade para resolver
+            um problema devido a falta de experiência, e nesses momoentos eu pedi ajuda ao
+            colega de equipe, o que me proporcionou adquirir mais conhecimento e
+            prosseguir nas tarefas
+          </li>
+        </ul>
       </div>
     </main>
   )
