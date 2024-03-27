@@ -17,7 +17,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <span className="text-xl font-bold leading-10">{`<thg />`}</span>
             <ul className="flex flex-row-reverse items-center gap-4 md:flex-row">
               {appRoutes.map(({ elementId, linkText }) => (
-                <li className="cursor-pointer px-3 text-center font-semibold leading-10 duration-300 hover:bg-gray-450 hover:text-white dark:text-white md:hover:bg-gray-700">
+                <li
+                  key={elementId}
+                  className="cursor-pointer px-3 text-center font-semibold leading-10 duration-300 hover:bg-gray-450 hover:text-white dark:text-white md:hover:bg-gray-700"
+                >
                   <LinkComponent elementId={elementId} linkText={linkText} />
                 </li>
               ))}
