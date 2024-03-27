@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/business-metrics.png',
-        href: '/business-metrics.png',
+        url: '/painel_estatisticas.png',
+        href: '/painel_estatisticas.png',
       },
     ],
   },
@@ -58,18 +58,21 @@ export default function CompanyStatistics(): JSX.Element {
           </section>
           <a
             className="text-white hover:underline"
+            target="_blank"
             href="http://estatisticas.jucema.ma.gov.br/"
           >
             acessar projeto
           </a>
         </section>
-        <Image
-          alt="imagem contendo gráficos com supostas análises estatísticas"
-          src="/business-metrics.png"
-          width={704}
-          height={404}
-          className="lg:h-[404px] lg:w-[704px]"
-        />
+        <a target="_blank" href="http://estatisticas.jucema.ma.gov.br/">
+          <Image
+            alt="imagem contendo gráficos com supostas análises estatísticas"
+            src="/business-metrics.png"
+            width={704}
+            height={404}
+            className="scale-95 transition-all duration-150 hover:scale-100 lg:h-[404px] lg:w-[704px]"
+          />
+        </a>
       </div>
 
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
@@ -164,11 +167,50 @@ export default function CompanyStatistics(): JSX.Element {
                 que foi divertido).
               </li>
               <li>
-                Da implementação: para implementar o layout, usei o framework{' '}
-                <span className="font-semibold">ReactJS</span> para dar vida ao projeto,
-                sobre o framework a usar, já tinha sido decidido pelo colega de equipe,
-                pois ele tinha algum conhecimento sobre, e caso precisasse de alguma
-                ajuda, ele saberia o que fazer.;
+                Da implementação: para implementar o layout, usei a linguagem{' '}
+                <a
+                  href="https://devdocs.io/javascript/"
+                  className="font-semibold underline"
+                >
+                  JavaScript
+                </a>{' '}
+                e o framework{' '}
+                <a
+                  href="https://react.dev/reference/react"
+                  className="font-semibold underline"
+                >
+                  ReactJS
+                </a>{' '}
+                para dar vida ao projeto, sobre o framework a usar, já tinha sido decidido
+                pelo colega de equipe, pois ele tinha algum conhecimento sobre, e caso
+                precisasse de alguma ajuda, ele saberia o que fazer.
+              </li>
+              <li>
+                Da seleção dos filtros: para adicionar a possibilidade de seleção de
+                multiplas opções em um único filtro precisei buscar por ferramentas que me
+                oferecessem essa possibilidade, até que encontrei a{' '}
+                <a
+                  href="https://multiselect-react-dropdown.vercel.app/?path=/story/multiselect-dropdown--flat-array"
+                  className="font-semibold underline"
+                >
+                  multiselect-react-dropdown
+                </a>
+                , uma ferramenta que me permitia ter total controle de como cada filtro
+                funcionaria.
+              </li>
+              <li>
+                Do gerenciamento de filtros: de alguma forma eu precisaria monitorar como
+                cada filtro estava relacionado com as opções selecionadas, precisaria
+                também que a cada seleção todos os gráfico e opções de filtros para
+                combinação fossem atualizadas (isso foi complexo de fazer), e para essa
+                tarefa resolvi usar a{' '}
+                <a
+                  href="https://react.dev/reference/react/useContext"
+                  className="font-semibold underline"
+                >
+                  contextApi
+                </a>{' '}
+                do react.
               </li>
             </ul>
             <p className="bg-gray-200 p-3 font-semibold text-blue-950">
@@ -312,6 +354,17 @@ export default function CompanyStatistics(): JSX.Element {
             prosseguir nas tarefas
           </li>
         </ul>
+      </div>
+
+      <div className="mx-auto space-y-3 border-b border-white/25 pb-[72px] text-white lg:w-3/4">
+        <span className="font-semibold lg:text-2xl">Layout Final Do Projeto</span>
+        <Image
+          src="/painel_estatisticas.png"
+          width={832}
+          height={832}
+          className="mx-auto"
+          alt="imagem do projeto painel_estatisticas o qual fiz para a jucema"
+        />
       </div>
     </main>
   )
