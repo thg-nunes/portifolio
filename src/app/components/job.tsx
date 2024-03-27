@@ -44,9 +44,9 @@ export const Job = ({
       <a href={jobLink} className="group relative">
         <span className="absolute hidden h-full w-full bg-black/25 text-white group-hover:block" />
         <Image
-          width={464}
-          height={464}
-          className="rounded-md lg:size-[464px]"
+          width={680}
+          height={592}
+          className="rounded-md lg:h-[592px] lg:w-[680px]"
           src={projectSrc}
           alt="imagem do projeto de estatisticas"
         />
