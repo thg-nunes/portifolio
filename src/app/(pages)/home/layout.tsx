@@ -1,9 +1,16 @@
+import { Metadata } from 'next'
 import { LinkComponent } from '../../components/liink'
 
 import { appRoutes } from '@/src/utils/appRouts'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Home',
+  icons: [
+    {
+      url: '/homePage-icon.svg',
+      href: '/homePage-icon.svg',
+    },
+  ],
   description:
     'Aqui você vai encontrar um breve resumo de quem sou e o que faço, além de trabalhos já realizados.',
 }
