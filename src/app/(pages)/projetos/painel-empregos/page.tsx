@@ -30,7 +30,7 @@ export default function CompanyStatistics(): JSX.Element {
             <div className="flex flex-wrap gap-3">
               {tasks.map((task) => (
                 <span
-                  className="rounded-md bg-rose-500 p-1 px-3 text-sm text-white"
+                  className="bg-rose-500 rounded-md p-1 px-3 text-sm text-white"
                   key={task}
                 >
                   {task}
@@ -116,8 +116,8 @@ export default function CompanyStatistics(): JSX.Element {
         <section className="pl-3">
           <span className="font-semibold lg:text-xl">Levantamento de requisítos</span>
           <p>
-            Para saber quais os requisítos do sistema precisei conversar com o colega de
-            equipe, e após algums minutos foram levanntados os seguintes pontos:
+            Para saber quais os requisitos do sistema, precisei conversar com o colega de
+            equipe, e após alguns minutos foram levantados os seguintes pontos:
           </p>
 
           <div className="rounded-md p-9 font-semibold">
@@ -152,14 +152,13 @@ export default function CompanyStatistics(): JSX.Element {
             <span className="mb-3 block lg:text-xl">Ferramentas</span>
             <ul className="mb-6 list-disc space-y-3 px-6 lg:text-sm">
               <li>
-                Do layout: com os pontos cruciais anotados, dei início ao desenvolvimento
-                do layout. Usei o <span className="font-semibold">figma</span> para criar
-                o protótipo da página, nesse processo o colega de equipe deu algumas
-                sugestões as quais me ajudaram a agilizar a entrega do layout. E para essa
-                aplicação o diferencial é que deveria criar duas páginas, porém
-                semelhantes, isso também me proporcionou ter maior agilidade na
-                prototipação, pois ao fazer a primeira página a seguda automaticamente já
-                estaria pré pronta.
+                Com os pontos cruciais anotados, dei início ao desenvolvimento do layout.
+                Usei o <span className="font-semibold">figma</span> para criar o protótipo
+                da página. Nesse processo, o colega de equipe deu algumas sugestões que me
+                ajudaram a agilizar a entrega do layout. E para essa aplicação, o
+                diferencial é que deveria criar duas páginas, porém semelhantes. Isso
+                também me proporcionou ter maior agilidade na prototipação, pois ao fazer
+                a primeira página, a segunda automaticamente já estaria pré-pronta.
               </li>
               <li>
                 Da implementação: para implementar o layout, usei a linguagem{' '}
@@ -223,7 +222,7 @@ export default function CompanyStatistics(): JSX.Element {
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
         <span className="font-semibold lg:text-2xl">Resultados e Impacto</span>
         <section className="space-y-3 rounded-md p-9">
-          <p>Os impactos dessa nova página no sistema do orgão foram os seguintes:</p>
+          <p>Os impactos dessa nova página no sistema do órgão foram os seguintes:</p>
           <ul className="mb-6 list-disc space-y-3 px-6 lg:text-sm">
             <li>O usuário agora podia verificar informações por município</li>
             <li>
@@ -333,11 +332,11 @@ export default function CompanyStatistics(): JSX.Element {
         <span className="font-semibold lg:text-2xl">O que Aprendi</span>
         <ul className="space-y-3 pl-3">
           <li>
-            1 - Opniões são bem vindas: a priore fique em dúvida se minha sugestão seria
-            levada em consideração ou não, porém mesmo ocupando o cargo de estagiário
-            minha sugestão de novo framework foi bem aceita, uma vez que sabendo as
-            facilidades e beneficios que isso traria no futuro para a empresa(diminuição
-            no custo com servidores) não tinha o porque não implementa-la
+            1 - Opiniões são bem-vindas: a princípio, fiquei em dúvida se minha sugestão
+            seria levada em consideração ou não. No entanto, mesmo ocupando o cargo de
+            estagiário, minha sugestão de novo framework foi bem aceita. Uma vez que
+            sabendo as facilidades e benefícios que isso traria no futuro para a empresa
+            (diminuição no custo com servidores), não havia motivo para não implementá-la.
           </li>
         </ul>
       </div>

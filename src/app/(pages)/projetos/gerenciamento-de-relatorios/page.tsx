@@ -85,30 +85,31 @@ export default function CompanyStatistics(): JSX.Element {
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
         <span className="font-semibold lg:text-2xl">Contexto</span>
         <p>
-          Mensalmente ssão gerados relatórios com informações de empresas abertas/fechadas
+          Mensalmente são gerados relatórios com informações de empresas abertas/fechadas
           e também empregos gerados no estado. Precisamos de um sistema que nos
-          possibilite gerenciar de forma mais facil e rápida todos esses arquivos, e você
-          deverá criar a página para nós que deverá atender alguns requisítos.
+          possibilite gerenciar de forma mais fácil e rápida todos esses arquivos, e você
+          deverá criar a página para nós que deverá atender alguns requisitos.
         </p>
         <p className="rounded-md bg-blue-700/40 p-9 font-semibold">
-          <span className="mb-3 block lg:text-xl">O desafio</span> Eu deveria cria o
-          protótipo do sistema e realizar a implementação do mesmo, devendo haver forma de
-          realizar o download, deletar um arquivo específico da base de dados que
-          estivesse com erro, fazer o upload desses relatórios, um sistema de
-          autenticação, deveria tambtem ter uma página para cadastrar usuários e gerenciar
-          o acesso deles ao sistema. Um diferencial desse projeto foi a implementação de
-          páginas com diferentes níveis de acesso, sendo que para cada nivel deveria ser
-          exibida uma inforção/função diferente.
+          <span className="mb-3 block lg:text-xl">O desafio</span> Eu deveria criar o
+          protótipo do sistema e realizar a implementação do mesmo. Deveria haver forma de
+          realizar o download e deletar um arquivo específico da base de dados que
+          estivesse com erro, bem como fazer o upload desses relatórios. Além disso, um
+          sistema de autenticação deveria ser implementado, e também deveria haver uma
+          página para cadastrar usuários e gerenciar o acesso deles ao sistema. Um
+          diferencial desse projeto foi a implementação de páginas com diferentes níveis
+          de acesso, sendo que para cada nível deveria ser exibida uma informação/função
+          diferente.
         </p>
       </div>
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
         <span className="font-semibold lg:text-2xl">Estratégia e Planejamento</span>
         <p>
           Parti primeiramente para a prototipação de todas as possíveis páginas que aquele
-          sistema deveria ter, atentando a cada um dos requisítos levantados. Porém aqui
-          surgiu um detalhe: eu nunca tinha feito um sistema de autenticação, não fazia
+          sistema deveria ter, atentando a cada um dos requisitos levantados. No entanto,
+          surgiu um detalhe: eu nunca tinha feito um sistema de autenticação e não fazia
           ideia de como faria a proteção das rotas ou recursos que um usuário poderia ou
-          não ver. Então comecei a buscar informações de como deveria fazer tudo isso de
+          não ver. Então, comecei a buscar informações de como deveria fazer tudo isso de
           forma segura e performática.
         </p>
 
@@ -116,21 +117,21 @@ export default function CompanyStatistics(): JSX.Element {
           <span className="font-semibold lg:text-xl">Pesquisa de Layouts</span>
           <p>
             Como era um sistema que deveria listar os relatórios e usuários, posso dizer
-            que essa parte foi tranquila, pois haviam vários dashboard's que continham
-            tais implementações, e aopós um tempo de busca notei que em várias aplicações
-            para listar algum tipo de informação o mais comum era usar um tipo de tabela
-            para classificar/dividir tudo. Os relatórios deveriam ser filtrados por tipo,
-            para isso usei o mesmo padrão de filtros das outras duas aplicações
-            construidas para a empresa.
+            que essa parte foi tranquila, pois havia vários dashboards que continham tais
+            implementações. Após um tempo de busca, notei que em várias aplicações para
+            listar algum tipo de informação, o mais comum era usar um tipo de tabela para
+            classificar/dividir tudo. Os relatórios deveriam ser filtrados por tipo, para
+            isso usei o mesmo padrão de filtros das outras duas aplicações construídas
+            para a empresa.
           </p>
         </section>
 
         <section className="pl-3">
           <span className="font-semibold lg:text-xl">Levantamento de requisítos</span>
           <p>
-            Aapós algums minutos de análise de como o sistema deveria funcionar e
-            conversas do colega de equipe com o chefe do setor foram levanntados os
-            seguintes pontos:
+            Após alguns minutos de análise de como o sistema deveria funcionar e conversas
+            do colega de equipe com o chefe do setor, foram levantados os seguintes
+            pontos:
           </p>
 
           <div className="rounded-md p-9 font-semibold">
@@ -141,7 +142,8 @@ export default function CompanyStatistics(): JSX.Element {
                 existentes para uma determinada combinação de filtro
               </li>
               <li>
-                O sistema deve conter os seguintes níveis de acesso: user, admin e root
+                O sistema deve conter os seguintes níveis de acesso: usuário,
+                administrador e root
               </li>
               <li>
                 O usuário autenticado só pode ver as informações compatíveis com seu nível
@@ -149,12 +151,12 @@ export default function CompanyStatistics(): JSX.Element {
               </li>
               <li>
                 O sistema deve ter uma forma de realizar: upload, download e deleção de
-                relatório, deve haver um meio de editar dados e ativar/desativar um
+                relatório; deve haver um meio de editar dados e ativar/desativar um
                 usuário
               </li>
               <li>
-                Para toda ação a ser tomada deve haver um popup de confimação e explicação
-                de determinada ação
+                Para toda ação a ser tomada, deve haver um popup de confirmação e
+                explicação de determinada ação
               </li>
               <li>
                 Ao realizar o primeiro login, o usuário deve ser obrigado a alterar sua
@@ -250,8 +252,8 @@ export default function CompanyStatistics(): JSX.Element {
               </li>
             </ul>
             <p className="bg-gray-200 p-3 font-semibold text-blue-950">
-              <GoAlertFill className="mr-3 inline size-6 text-yellow-700" />O grade
-              desafio para mim nesse projeto foi desenvolver autenticação, pois usariamos
+              <GoAlertFill className="mr-3 inline size-6 text-yellow-700" />O grande
+              desafio para mim nesse projeto foi desenvolver autenticação, pois usaríamos
               um sistema baseado em{' '}
               <a
                 className="semibold underline"
@@ -259,7 +261,7 @@ export default function CompanyStatistics(): JSX.Element {
               >
                 JWT
               </a>{' '}
-              e quando o token expirasse eu deveria fazer uma atualização do token e de
+              e quando o token expirasse, eu deveria fazer uma atualização do token e de
               todas as requisições que estavam usando o token antigo sem que o usuário
               precisasse fazer um novo login ou percebesse esse processo.
             </p>
@@ -277,23 +279,23 @@ export default function CompanyStatistics(): JSX.Element {
           <ul className="mb-6 list-disc space-y-3 px-6 lg:text-sm">
             <li>
               O usuário agora podia fazer o upload de um relatório de forma mais facil e
-              com apenas algums cliques
+              com apenas alguns cliques
             </li>
             <li>
-              Caso um relatório estivesse errado ou corrompido, agora havia como deletar
-              ele da base de dados sem nenhuma complexidade ou demora no processo
+              Caso um relatório estivesse errado ou corrompido, agora havia como deletá-lo
+              da base de dados sem nenhuma complexidade ou demora no processo
             </li>
             <li>
-              Antes os relatórios eram enviados por email assim que eram gerados, e agora
-              passou a ter a possibilidade de download no momento que o usuário desejasse
+              Antes os relatórios eram enviados por e-mail assim que eram gerados, e agora
+              passou a ter a possibilidade de download no momento que o usuário desejasse.
             </li>
             <li>
-              Antes as pessoas ficavam a espera de alguém do setor para obter um
-              relatório, agora bastava entrar no sistema que ela teria acesso de forma
+              Antes as pessoas ficavam à espera de alguém do setor para obter um
+              relatório, agora bastava entrar no sistema que elas teriam acesso de forma
               imediata
             </li>
             <li>
-              No que diz respeito ao upload o sistema trouxe a possibilidade de upload de
+              No que diz respeito ao upload, o sistema trouxe a possibilidade de upload de
               múltiplos arquivos de uma vez
             </li>
           </ul>

@@ -95,7 +95,7 @@ export default function CompanyStatistics(): JSX.Element {
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
         <span className="font-semibold lg:text-2xl">Estratégia e Planejamento</span>
         <p>
-          Até aquele momente eu nunca tinha acriado um layout nem uma aplicação web, então
+          Até aquele momente eu nunca tinha criado um layout nem uma aplicação web, então
           eu planejei os seguintes passos: 1) preciso criar um layout para que seja
           analisado 2) com o layout aprovado preciso buscar as ferramentas que posso usar
           para implementa-lo.
@@ -122,16 +122,16 @@ export default function CompanyStatistics(): JSX.Element {
         </section>
 
         <section className="pl-3">
-          <span className="font-semibold lg:text-xl">Levantamento de requisítos</span>
+          <span className="font-semibold lg:text-xl">Levantamento de requisitos</span>
           <p>
-            Para saber quais os requisítos do sistema precisei conversar com o colega de
-            equipe, e após algums minutos foram levanntados os seguintes pontos:
+            Para saber quais os requisitos do sistema precisei conversar com o colega de
+            equipe, e após algums minutos foram levantados os seguintes pontos:
           </p>
 
           <div className="rounded-md p-9 font-semibold">
             <ul className="list-disc space-y-3 px-6 lg:text-sm">
               <li>
-                O sistema de filtros deve conter a possibilidade de multipla seleção de
+                O sistema de filtros deve conter a possibilidade de múltipla seleção de
                 opções
               </li>
               <li>
@@ -181,16 +181,16 @@ export default function CompanyStatistics(): JSX.Element {
                 >
                   ReactJS
                 </a>{' '}
-                para dar vida ao projeto, sobre o framework a usar, já tinha sido decidido
-                pelo colega de equipe, pois ele tinha algum conhecimento sobre, e caso
-                precisasse de alguma ajuda, ele saberia o que fazer. Ao longo da
+                para dar vida ao projeto.Sobre o framework a usar, já tinha sido decidido
+                pelo colega de equipe, pois ele tinha algum conhecimento sobre, e caso eu
+                precisasse de alguma ajuda ele saberia o que fazer. Ao longo da
                 implementação do layout fui pedindo opnião de colegas de trabalho, mesmo
-                que não fossem da mesma área que eu, mas opniões de vinda de usuários
-                seria uma mão na roda para saber o que deveria melhorar.
+                que não fossem da mesma área que eu, mas opniões de vindas de usuários do
+                sistema seria uma mão na roda para saber o que deveria melhorar.
               </li>
               <li>
                 Da seleção dos filtros: para adicionar a possibilidade de seleção de
-                multiplas opções em um único filtro precisei buscar por ferramentas que me
+                múltiplas opções em um único filtro precisei buscar por ferramentas que me
                 oferecessem essa possibilidade, até que encontrei a{' '}
                 <a
                   href="https://multiselect-react-dropdown.vercel.app/?path=/story/multiselect-dropdown--flat-array"
