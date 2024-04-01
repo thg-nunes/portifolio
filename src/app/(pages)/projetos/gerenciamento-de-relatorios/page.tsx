@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { GoAlertFill } from 'react-icons/go'
 
 export const metadata: Metadata = {
-  title: 'Projeto - Painel de Empresas',
+  title: 'Projeto - Gerenciamento de Relatórios',
   description:
     'Esse projeto foi desenvolvido para a JUCEMA com o propósito de facilitar o gerenciamento de relatórios gerados mensalmente, esse projeto foi totalmente inovador para a empresa, pois até o momento não havia uma forma de fazer tal tarefa.',
   icons: {

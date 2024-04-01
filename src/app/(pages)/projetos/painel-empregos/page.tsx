@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/painel_caged.png',
-        href: '/painel_caged.png',
+        url: '/business-metrics-2.jpg',
+        href: '/business-metrics-2.jpg',
       },
     ],
   },
