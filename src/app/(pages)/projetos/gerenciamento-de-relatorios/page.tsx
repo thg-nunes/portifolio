@@ -74,7 +74,7 @@ export default function CompanyStatistics(): JSX.Element {
         >
           <Image
             alt="imagem contendo gráficos com supostas análises estatísticas"
-            src="/sistema de relatórios.png"
+            src="/pagina_de_relatorios.png"
             width={704}
             height={404}
             className="scale-95 transition-all duration-150 hover:scale-100 lg:h-[404px] lg:w-[704px]"
