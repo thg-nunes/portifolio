@@ -96,9 +96,9 @@ export default function Home() {
         <Job
           itemsDirection="reverse"
           projectSrc="/painel_caged.png"
-          jobName="Painel de Empregogs do Formais"
+          jobName="Painel de Empregos do Formais"
           shortDesctiption="Painel de empregos formais do Maranhão feito para a JUCEMA."
-          jobLink="http://caged.jucema.ma.gov.br/empregos/formais"
+          jobLink="/projetos/painel-empregos"
           tasks={['Design do Sistema', 'Implementação do Layout', 'Mudança de Framework']}
         />
 

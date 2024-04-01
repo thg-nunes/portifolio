@@ -5,12 +5,12 @@ import { GoAlertFill } from 'react-icons/go'
 export const metadata: Metadata = {
   title: 'Projeto - Painel de Empresas',
   description:
-    'Esse projeto foi desenvolvido para a JUCEMA com o propósito de substituir a página já existente que apresentava dados de abertura e fechamento de empresas no estado do maranhão.',
+    'Esse projeto foi desenvolvido para a JUCEMA com o propósito de substituir a página já existente que apresentava histórico dos dados de empregos gerados no estado do maranhão.',
   icons: {
     icon: [
       {
-        url: '/painel_estatisticas.png',
-        href: '/painel_estatisticas.png',
+        url: '/painel_caged.png',
+        href: '/painel_caged.png',
       },
     ],
   },
@@ -25,7 +25,7 @@ export default function CompanyStatistics(): JSX.Element {
         <section className="lg:h-max lg:w-[38%]">
           <section className="flex flex-col gap-3 rounded-md text-white">
             <p className="font-semibold lg:text-2xl">
-              Desenvolvedor do Sistema Estatístico
+              Desenvolvedor do Sistema De Empregos Formais
             </p>
             <div className="flex flex-wrap gap-3">
               {tasks.map((task) => (
@@ -41,9 +41,7 @@ export default function CompanyStatistics(): JSX.Element {
           <section className="flex flex-wrap justify-between gap-3 text-white lg:my-12">
             <div>
               <p className="lg:text-xl">Tempo do Projeto</p>
-              <span className="opacity-85 lg:text-sm">
-                Dezembro de 2021 - Abril de 2022
-              </span>
+              <span className="opacity-85 lg:text-sm">Maio de 2022 - Agosto de 2022</span>
             </div>
             <div>
               <p className="lg:text-xl">Setor</p>
@@ -52,22 +50,22 @@ export default function CompanyStatistics(): JSX.Element {
               </span>
             </div>
             <div>
-              <p className="lg:text-xl">Dunção</p>
+              <p className="lg:text-xl">Função</p>
               <span className="opacity-85 lg:text-sm">Desenvolvedor, Design</span>
             </div>
           </section>
           <a
             className="text-white hover:underline"
             target="_blank"
-            href="http://estatisticas.jucema.ma.gov.br/"
+            href="http://caged.jucema.ma.gov.br/"
           >
             acessar projeto
           </a>
         </section>
-        <a target="_blank" href="http://estatisticas.jucema.ma.gov.br/">
+        <a target="_blank" href="http://caged.jucema.ma.gov.br/">
           <Image
             alt="imagem contendo gráficos com supostas análises estatísticas"
-            src="/business-metrics.png"
+            src="/business-metrics-2.jpg"
             width={704}
             height={404}
             className="scale-95 transition-all duration-150 hover:scale-100 lg:h-[404px] lg:w-[704px]"
@@ -78,47 +76,41 @@ export default function CompanyStatistics(): JSX.Element {
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
         <span className="font-semibold lg:text-2xl">Contexto</span>
         <p>
-          A jucema possuia uma página que apresentava dados de empresas do maranhão, porém
-          a página havia algumas limitações além de layout antigo. Me diverti com esse
-          primeiro projeto, pois até aquele dia não sabia nada de desenvolvimento
-          front-end e nem de criação de layout.
+          A jucema possuia uma página que apresentava dados de empregos gerados no
+          maranhão, porém a página havia algumas limitações além de layout antigo(mesmo
+          problema do projeto de estatísticas). Um diferencial desse projeto será a nova
+          tecnologia usada.
         </p>
         <p className="rounded-md bg-blue-700/40 p-9 font-semibold">
           <span className="mb-3 block lg:text-xl">O desafio</span>A ideia era que eu
-          fizesse uma melhoria no layout da página(não havia design para o fazer), mudar
-          os dados que eram expostos ao usuário(removendo os que não eram tão
+          fizesse a criação de um novo layout para a página e fizesse a implementação do
+          mesmo, mudar os dados que eram expostos ao usuário(removendo os que não eram tão
           interessantes e adicionando novas informações) e melhoria na forma de combinação
           de filtros de busca da página(até então só podia selecionar uma opção por
-          filtro).
+          filtro). O desafio aqui seria implementar um novo framework nessa aplicação, o
+          qual eu mesmo sugeri a ideia e dei os motivos de o aceitarem.
         </p>
       </div>
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
         <span className="font-semibold lg:text-2xl">Estratégia e Planejamento</span>
         <p>
-          Até aquele momente eu nunca tinha acriado um layout nem uma aplicação web, então
-          eu planejei os seguintes passos: 1) preciso criar um layout para que seja
-          analisado 2) com o layout aprovado preciso buscar as ferramentas que posso usar
-          para implementa-lo.
+          Nesse ponto eu já tinha um bom conhecimento de ReactJS e Front-End, o que me
+          possibilitou criar essa aplicação de forma mais organizada, padronizada e com um
+          tempo menor de entrega. Com a primeira experiência em criar um layout e fazer a
+          implementação para uma aplicação web, usei as mesmas estratégias que no primeiro
+          projeto: 1) preciso criar um layout o mais rápido possível para que seja
+          analisado e melhorado 2) Com o layout aprovado preciso buscar as ferramentas que
+          posso usar para implementa-lo.
         </p>
 
         <section className="pl-3">
           <span className="font-semibold lg:text-xl">Pesquisa de Layouts</span>
           <p>
-            Comecei a buscar modelos de dashboards que apresentavam dados estatísticos,
-            fui anotando os pontos em comum e até mesmo tirei algumas informações da
-            página que já estava implementada e que poderiam ser mantidas.
+            A sugestão do colega de equipe e do chefe que solicitou os trabalhos foi de
+            que eu usasse o primeiro layout feito, pois como já havia sido aprovado, não
+            haveria risco de ser reprovação. Só havia um porém, ele deveria apresentar
+            graficos diferentes.
           </p>
-
-          <div className="rounded-md p-9 font-semibold">
-            <span className="mb-3 block lg:text-xl">Descoberta</span>
-            <ul className="list-disc space-y-3 px-6 lg:text-sm">
-              <li>Os gráficos mais usados: Barra | Linha | Pizza</li>
-              <li>
-                Ajuste no layout: São mais usados em forma de coluna, ou seja, um abaixo
-                do outro
-              </li>
-            </ul>
-          </div>
         </section>
 
         <section className="pl-3">
@@ -139,12 +131,14 @@ export default function CompanyStatistics(): JSX.Element {
                 gráficos e as opções de filtros disponíveis para uma determinada seleção
               </li>
               <li>
-                A aplicação deve conter duas páginas, uma para informações de empresas
-                abertas e outra para informações de empresas ativas
-              </li>
-              <li>
                 Ao virar o ano, as informações presentes no sistema devem permanecer as
                 mesmas do ano anterior até que a data do ano atual seja 05 de fevereiro
+              </li>
+              <li>A página deve conter um mapa contendo as infomações por município</li>
+              <li>
+                A página deve ter uma forma de acompanhar algumas informações como: quais
+                as opções de filtros mais selecionadas, acessos por mês que a página
+                recebia e o local de onde veio um acesso.
               </li>
             </ul>
           </div>
@@ -175,18 +169,16 @@ export default function CompanyStatistics(): JSX.Element {
                   JavaScript
                 </a>{' '}
                 e o framework{' '}
-                <a
-                  href="https://react.dev/reference/react"
-                  className="font-semibold underline"
-                >
-                  ReactJS
+                <a href="https://nextjs.org/docs/app" className="font-semibold underline">
+                  NextJs
                 </a>{' '}
-                para dar vida ao projeto, sobre o framework a usar, já tinha sido decidido
-                pelo colega de equipe, pois ele tinha algum conhecimento sobre, e caso
-                precisasse de alguma ajuda, ele saberia o que fazer. Ao longo da
-                implementação do layout fui pedindo opnião de colegas de trabalho, mesmo
-                que não fossem da mesma área que eu, mas opniões de vinda de usuários
-                seria uma mão na roda para saber o que deveria melhorar.
+                para dar vida ao projeto, sobre o framework foi sugestão minha, o motivo
+                foi pela maior possibilidade que a ferramenta me dava, por exemplo: eu
+                poderia gerar uma página no momento do build da aplicação e mater essa
+                página em cache, o que me dava a chance de fazer uma aplicação mais
+                rápida(por mais que fosse uma SPA), pois ao usuário acessar a página no
+                endereço web essa já estaria com seus dados todos armazenados em cache e
+                só no ponto de mandar o html | css | javascript para o browser trata-lo
               </li>
               <li>
                 Da seleção dos filtros: para adicionar a possibilidade de seleção de
@@ -218,11 +210,10 @@ export default function CompanyStatistics(): JSX.Element {
             </ul>
             <p className="bg-gray-200 p-3 font-semibold text-blue-950">
               <GoAlertFill className="mr-3 inline size-6 text-yellow-700" />O grade
-              desafio para mim nessa etapa foi desenvolver a implementação do layout, pois
-              assim que comecei eu sabia bem pouco sobre o framework e tive que ir
-              aprendendo muita coisa enquanto fazia a aplicação. Houveram vários erros e
-              problemas os quais passei dias para encontrar um solução, e a cada erro
-              solucionado eu aprendia mais sobre o framework.
+              desafio para mim nessa etapa foi desenvolver a a aplicação com o novo
+              framework, por mais que fosse baseado em ReactJS ele tinha suas
+              particularidades, das quais precisei aprender durante a implementação do
+              sistema.
             </p>
           </div>
         </section>
@@ -231,21 +222,17 @@ export default function CompanyStatistics(): JSX.Element {
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
         <span className="font-semibold lg:text-2xl">Resultados e Impacto</span>
         <section className="space-y-3 rounded-md p-9">
-          <p>
-            O usuário agora tinha uma página mais simples e confortável de se obter
-            informações, pois os gráficos e filtros estavam mais bem distribuidos e
-            organizados. Cada gráfico passou a ter um título descritivo do que
-            representava tal informação, e com essas melhorias:
-          </p>
+          <p>Os impactos dessa nova página no sistema do orgão foram os seguintes:</p>
           <ul className="mb-6 list-disc space-y-3 px-6 lg:text-sm">
+            <li>O usuário agora podia verificar informações por município</li>
             <li>
-              A página obteve um layout mais atualizado, com novas informações e novos
-              modelos de graficos/filtros.
+              A página obteve um novo layout com responsividade, algo que a aplicação
+              anterior não tinha
             </li>
             <li>
-              O usuário passou a conseguir obter mais informações sobre empresas
-              abertas/fechadas do estado, uma vez que a combinação de filtros passou a ser
-              muito maior que a página anterior
+              O usuário passou a conseguir obter mais possibilidade de obter informações
+              mais completas, uma vez que a combinação de filtros passou a ser muito maior
+              que a página anterior
             </li>
             <li>
               Com a combinação de filtros maior, a quantidade de requisições também
@@ -267,8 +254,10 @@ export default function CompanyStatistics(): JSX.Element {
         <span className="font-semibold lg:text-2xl">Ferramentas usadas</span>
         <section className="space-y-3 rounded-md p-9">
           <p>
-            Aqui estão todas as ferramentas as quais utilizei para desenvolver esse
-            projeto:
+            Por ser um projeto semlhante ao{' '}
+            <a href="/projetos/estatisticas">Sistema Estatístico</a>as libs aqui usadas
+            foram quase todas iguais, com um diferencial sendo o NextJs, veja as
+            ferramentas usadas:
           </p>
           <ul className="mb-6 list-disc space-y-3 px-6 lg:text-sm">
             <li>
@@ -282,8 +271,8 @@ export default function CompanyStatistics(): JSX.Element {
               </a>
             </li>
             <li>
-              <a className="underline" href="https://react.dev/">
-                ReactJs
+              <a className="underline" href="https://nextjs.org/docs/app/">
+                NextJs
               </a>
             </li>
             <li>
@@ -343,18 +332,11 @@ export default function CompanyStatistics(): JSX.Element {
         <span className="font-semibold lg:text-2xl">O que Aprendi</span>
         <ul className="space-y-3 pl-3">
           <li>
-            1 - <span className="font-semibold">Planejamento é essencial:</span> com o
-            primeiro contato com o desenvolvimento de software que iria para produção, não
-            poderia simplismente implementar o layout sem antes ter metas estabelecidas,
-            conhecimennto sobre o que a empresa queria ou sem saber quais requisitos
-            deveriam ser seguidos
-          </li>
-          <li>
-            2 - <span className="font-semibold">Peça ajuda quando necessário: </span>
-            por vários momentos no início do projeto enfrentei dificuldade para resolver
-            um problema devido a falta de experiência, e nesses momoentos eu pedi ajuda ao
-            colega de equipe, o que me proporcionou adquirir mais conhecimento e
-            prosseguir nas tarefas
+            1 - Opniões são bem vindas: a priore fique em dúvida se minha sugestão seria
+            levada em consideração ou não, porém mesmo ocupando o cargo de estagiário
+            minha sugestão de novo framework foi bem aceita, uma vez que sabendo as
+            facilidades e beneficios que isso traria no futuro para a empresa(diminuição
+            no custo com servidores) não tinha o porque não implementa-la
           </li>
         </ul>
       </div>
@@ -362,7 +344,7 @@ export default function CompanyStatistics(): JSX.Element {
       <div className="mx-auto space-y-3 border-b border-white/25 pb-[72px] text-white lg:w-3/4">
         <span className="font-semibold lg:text-2xl">Layout Final Do Projeto</span>
         <Image
-          src="/painel_estatisticas.png"
+          src="/painel_caged.png"
           width={832}
           height={832}
           className="mx-auto"
