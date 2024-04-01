@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { GoAlertFill } from 'react-icons/go'
 
 export const metadata: Metadata = {
-  title: 'Projeto - Painel de Empresas',
+  title: 'Projeto - Painel de Empregos',
   description:
     'Esse projeto foi desenvolvido para a JUCEMA com o propósito de substituir a página já existente que apresentava histórico dos dados de empregos gerados no estado do maranhão.',
   icons: {
@@ -154,11 +154,12 @@ export default function CompanyStatistics(): JSX.Element {
               <li>
                 Do layout: com os pontos cruciais anotados, dei início ao desenvolvimento
                 do layout. Usei o <span className="font-semibold">figma</span> para criar
-                o protótipo da página, nesse processo obtive ajuda de um colega da equipe
-                e demorei pouco menos de 1 semana para entregar um primeiro resultado, e
-                ao longo desse processo tive várias negações para o protótipo, houveram
-                vários reajustes e fui aprendendo como a ferramenta funcionava (confesso
-                que foi divertido).
+                o protótipo da página, nesse processo o colega de equipe deu algumas
+                sugestões as quais me ajudaram a agilizar a entrega do layout. E para essa
+                aplicação o diferencial é que deveria criar duas páginas, porém
+                semelhantes, isso também me proporcionou ter maior agilidade na
+                prototipação, pois ao fazer a primeira página a seguda automaticamente já
+                estaria pré pronta.
               </li>
               <li>
                 Da implementação: para implementar o layout, usei a linguagem{' '}
@@ -209,7 +210,7 @@ export default function CompanyStatistics(): JSX.Element {
               </li>
             </ul>
             <p className="bg-gray-200 p-3 font-semibold text-blue-950">
-              <GoAlertFill className="mr-3 inline size-6 text-yellow-700" />O grade
+              <GoAlertFill className="mr-3 inline size-6 text-yellow-700" />O grande
               desafio para mim nessa etapa foi desenvolver a a aplicação com o novo
               framework, por mais que fosse baseado em ReactJS ele tinha suas
               particularidades, das quais precisei aprender durante a implementação do

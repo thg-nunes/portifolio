@@ -30,7 +30,7 @@ export default function CompanyStatistics(): JSX.Element {
             <div className="flex flex-wrap gap-3">
               {tasks.map((task) => (
                 <span
-                  className="rounded-md bg-rose-500 p-1 px-3 text-sm text-white"
+                  className="bg-rose-500 rounded-md p-1 px-3 text-sm text-white"
                   key={task}
                 >
                   {task}
@@ -217,7 +217,7 @@ export default function CompanyStatistics(): JSX.Element {
               </li>
             </ul>
             <p className="bg-gray-200 p-3 font-semibold text-blue-950">
-              <GoAlertFill className="mr-3 inline size-6 text-yellow-700" />O grade
+              <GoAlertFill className="mr-3 inline size-6 text-yellow-700" />O grande
               desafio para mim nessa etapa foi desenvolver a implementação do layout, pois
               assim que comecei eu sabia bem pouco sobre o framework e tive que ir
               aprendendo muita coisa enquanto fazia a aplicação. Houveram vários erros e

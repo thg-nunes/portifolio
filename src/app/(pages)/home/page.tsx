@@ -106,12 +106,13 @@ export default function Home() {
           jobName="Página de relatórios"
           projectSrc="/pagina_de_relatorios.png"
           shortDesctiption="Projeto feito para gerenciar os relatórios mensais de empregos e empresas."
-          jobLink="https://www.figma.com/file/InevirOT1PmXQAIgL0UQ1M/P%C3%A1gina-Relat%C3%B3rios?type=design&node-id=0%3A1&mode=design&t=xc5cN7AxV5exS1Ne-1"
+          jobLink="/projetos/gerenciamento-de-relatorios"
           tasks={[
             'Design do Sistema',
-            'Implementação do Layout',
-            'Mudança de Layout',
             'Autenticação',
+            'Code Review',
+            'Documentação',
+            'Implementação do Layout',
           ]}
         />
       </div>
