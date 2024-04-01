@@ -35,9 +35,9 @@ export default function Home() {
           <a
             download
             href="/currículo-front-end.pdf"
-            className="hidden w-max rounded-md bg-rose-500 p-2 px-6 text-xs font-bold capitalize text-white hover:bg-rose-500/80 hover:transition-all hover:duration-200 md:block lg:text-base"
+            className="bg-rose-500 hover:bg-rose-500/80 hidden w-max rounded-md p-2 px-6 text-xs font-bold capitalize text-white hover:transition-all hover:duration-200 md:block lg:text-base"
           >
-            donload CV
+            download CV
           </a>
         </section>
         <Image
@@ -68,10 +68,10 @@ export default function Home() {
             situation:
               'A empresa precisava atualizar uma página de dados estatísticos usada para obter algumas informações',
             action:
-              'Projetei a interface do usuário, escrevi código front-end e back-end, eotimizei o desempenho do site usando cache de requisições.',
+              'Projetei a interface do usuário, escrevi código front-end e back-end, e otimizei o desempenho do site usando cache de requisições',
             task: 'Desenvolvimento de um site responsivo usando ReactJs integrado com uma api conectada ao banco de dados Pinot',
             result:
-              'O painel empresarial foi lançado com sucesso e foi um dos serviços que serviu como modelo para as demais Juntas comerciais do país na construção de um portal nacional informações.',
+              'O painel empresarial foi lançado com sucesso e foi um dos serviços que serviu como modelo para as demais Juntas comerciais do país na construção de um portal nacional de informações.',
           }}
         />
       </div>
@@ -86,7 +86,7 @@ export default function Home() {
           </p>
         </section>
         <Job
-          jobName="Painel de Empresas do Maranhao"
+          jobName="Painel de Empresas do Maranhão"
           shortDesctiption="Painel de dados estatísticos da Junta Comercial do Estado do Maranhão - JUCEMA."
           projectSrc="/painel__estatisticas.png"
           jobLink="/projetos/estatisticas"

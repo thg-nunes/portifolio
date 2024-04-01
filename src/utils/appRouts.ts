@@ -9,7 +9,7 @@ export const appRoutes = [
   },
   {
     elementId: 'experiencias',
-    linkText: 'Experiencia',
+    linkText: 'Experiência',
   },
   {
     elementId: 'trabalhos',

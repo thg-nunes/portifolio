@@ -5,7 +5,7 @@ import { appRoutes } from '@/src/utils/appRouts'
 export const metadata = {
   title: 'Home',
   description:
-    'Aqui você vai encontrar um breve resumo de quem sou e oo que faço, além de trabalhos já realizados.',
+    'Aqui você vai encontrar um breve resumo de quem sou e o que faço, além de trabalhos já realizados.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
