@@ -20,17 +20,17 @@ export default function CompanyStatistics(): JSX.Element {
   const tasks = ['Design do Sistema', 'Implementação do Layout', 'Estatísticas']
 
   return (
-    <main className="mx-auto max-w-7xl space-y-12">
+    <main className="mx-auto max-w-7xl space-y-12 px-3 md:w-11/12">
       <div className="flex lg:items-center lg:justify-between">
-        <section className="lg:h-max lg:w-[38%]">
+        <section className="space-y-4 lg:h-max lg:w-[38%]">
           <section className="flex flex-col gap-3 rounded-md text-white">
-            <p className="font-semibold lg:text-2xl">
+            <p className="text-xl font-semibold lg:text-2xl">
               Desenvolvedor do Sistema De Empregos Formais
             </p>
             <div className="flex flex-wrap gap-3">
               {tasks.map((task) => (
                 <span
-                  className="bg-rose-500 rounded-md p-1 px-3 text-sm text-white"
+                  className="rounded-md bg-rose-500 p-1 px-3 text-sm text-white"
                   key={task}
                 >
                   {task}
@@ -55,14 +55,18 @@ export default function CompanyStatistics(): JSX.Element {
             </div>
           </section>
           <a
-            className="text-white hover:underline"
+            className="inline-block text-white underline lg:no-underline lg:hover:underline"
             target="_blank"
             href="http://caged.jucema.ma.gov.br/"
           >
             acessar projeto
           </a>
         </section>
-        <a target="_blank" href="http://caged.jucema.ma.gov.br/">
+        <a
+          target="_blank"
+          className="hidden md:block"
+          href="http://caged.jucema.ma.gov.br/"
+        >
           <Image
             alt="imagem contendo gráficos com supostas análises estatísticas"
             src="/business-metrics-2.jpg"
@@ -74,7 +78,7 @@ export default function CompanyStatistics(): JSX.Element {
       </div>
 
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
-        <span className="font-semibold lg:text-2xl">Contexto</span>
+        <span className="text-2xl font-semibold">Contexto</span>
         <p>
           A jucema possuia uma página que apresentava dados de empregos gerados no
           maranhão, porém a página havia algumas limitações além de layout antigo(mesmo
@@ -92,7 +96,7 @@ export default function CompanyStatistics(): JSX.Element {
         </p>
       </div>
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
-        <span className="font-semibold lg:text-2xl">Estratégia e Planejamento</span>
+        <span className="text-2xl font-semibold">Estratégia e Planejamento</span>
         <p>
           Nesse ponto eu já tinha um bom conhecimento de ReactJS e Front-End, o que me
           possibilitou criar essa aplicação de forma mais organizada, padronizada e com um
@@ -120,7 +124,7 @@ export default function CompanyStatistics(): JSX.Element {
             equipe, e após alguns minutos foram levantados os seguintes pontos:
           </p>
 
-          <div className="rounded-md p-9 font-semibold">
+          <div className="rounded-md p-3 font-semibold md:p-9">
             <ul className="list-disc space-y-3 px-6 lg:text-sm">
               <li>
                 O sistema de filtros deve conter a possibilidade de multipla seleção de
@@ -148,7 +152,7 @@ export default function CompanyStatistics(): JSX.Element {
             Desenvolvimento e Implementação
           </span>
 
-          <div className="rounded-md p-9">
+          <div className="rounded-md p-3 lg:p-9">
             <span className="mb-3 block lg:text-xl">Ferramentas</span>
             <ul className="mb-6 list-disc space-y-3 px-6 lg:text-sm">
               <li>
@@ -208,7 +212,7 @@ export default function CompanyStatistics(): JSX.Element {
                 do react.
               </li>
             </ul>
-            <p className="bg-gray-200 p-3 font-semibold text-blue-950">
+            <p className="rounded-md bg-gray-200 p-3 font-semibold text-blue-950">
               <GoAlertFill className="mr-3 inline size-6 text-yellow-700" />O grande
               desafio para mim nessa etapa foi desenvolver a a aplicação com o novo
               framework, por mais que fosse baseado em ReactJS ele tinha suas
@@ -220,8 +224,8 @@ export default function CompanyStatistics(): JSX.Element {
       </div>
 
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
-        <span className="font-semibold lg:text-2xl">Resultados e Impacto</span>
-        <section className="space-y-3 rounded-md p-9">
+        <span className="text-2xl font-semibold">Resultados e Impacto</span>
+        <section className="space-y-3 rounded-md p-3 lg:p-9">
           <p>Os impactos dessa nova página no sistema do órgão foram os seguintes:</p>
           <ul className="mb-6 list-disc space-y-3 px-6 lg:text-sm">
             <li>O usuário agora podia verificar informações por município</li>
@@ -251,8 +255,8 @@ export default function CompanyStatistics(): JSX.Element {
       </div>
 
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
-        <span className="font-semibold lg:text-2xl">Ferramentas usadas</span>
-        <section className="space-y-3 rounded-md p-9">
+        <span className="text-2xl font-semibold">Ferramentas usadas</span>
+        <section className="space-y-3 rounded-md p-3 lg:p-9">
           <p>
             Por ser um projeto semlhante ao{' '}
             <a href="/projetos/estatisticas">Sistema Estatístico</a>as libs aqui usadas
@@ -329,7 +333,7 @@ export default function CompanyStatistics(): JSX.Element {
       </div>
 
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
-        <span className="font-semibold lg:text-2xl">O que Aprendi</span>
+        <span className="text-2xl font-semibold">O que Aprendi</span>
         <ul className="space-y-3 pl-3">
           <li>
             1 - Opiniões são bem-vindas: a princípio, fiquei em dúvida se minha sugestão
@@ -342,7 +346,7 @@ export default function CompanyStatistics(): JSX.Element {
       </div>
 
       <div className="mx-auto space-y-3 border-b border-white/25 pb-[72px] text-white lg:w-3/4">
-        <span className="font-semibold lg:text-2xl">Layout Final Do Projeto</span>
+        <span className="text-2xl font-semibold">Layout Final Do Projeto</span>
         <Image
           src="/painel_caged.png"
           width={832}

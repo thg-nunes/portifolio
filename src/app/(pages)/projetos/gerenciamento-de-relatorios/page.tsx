@@ -26,17 +26,17 @@ export default function CompanyStatistics(): JSX.Element {
   ]
 
   return (
-    <main className="mx-auto max-w-7xl space-y-12">
+    <main className="mx-auto max-w-7xl space-y-12 px-3 md:w-11/12">
       <div className="flex lg:items-center lg:justify-between">
-        <section className="lg:h-max lg:w-[38%]">
+        <section className="space-y-4 lg:h-max lg:w-[38%]">
           <section className="flex flex-col gap-3 rounded-md text-white">
-            <p className="font-semibold lg:text-2xl">
+            <p className="text-xl font-semibold lg:text-2xl">
               Desenvolvedor do Sistema De Gerenciamento de Relatórios
             </p>
             <div className="flex flex-wrap gap-3">
               {tasks.map((task) => (
                 <span
-                  className="bg-rose-500 rounded-md p-1 px-3 text-sm text-white"
+                  className="rounded-md bg-rose-500 p-1 px-3 text-sm text-white"
                   key={task}
                 >
                   {task}
@@ -61,7 +61,7 @@ export default function CompanyStatistics(): JSX.Element {
             </div>
           </section>
           <a
-            className="text-white hover:underline"
+            className="inline-block text-white underline lg:no-underline lg:hover:underline"
             target="_blank"
             href="https://www.figma.com/file/TiNSLaHJW8ZvHRdj7DiTco/sistema-de-relat%C3%B3rios?type=whiteboard&node-id=0%3A1&t=cjX2la1jJjsi1Kv4-1"
           >
@@ -70,6 +70,7 @@ export default function CompanyStatistics(): JSX.Element {
         </section>
         <a
           target="_blank"
+          className="hidden md:block"
           href="https://www.figma.com/file/TiNSLaHJW8ZvHRdj7DiTco/sistema-de-relat%C3%B3rios?type=whiteboard&node-id=0%3A1&t=cjX2la1jJjsi1Kv4-1"
         >
           <Image
@@ -83,7 +84,7 @@ export default function CompanyStatistics(): JSX.Element {
       </div>
 
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
-        <span className="font-semibold lg:text-2xl">Contexto</span>
+        <span className="text-2xl font-semibold">Contexto</span>
         <p>
           Mensalmente são gerados relatórios com informações de empresas abertas/fechadas
           e também empregos gerados no estado. Precisamos de um sistema que nos
@@ -103,7 +104,7 @@ export default function CompanyStatistics(): JSX.Element {
         </p>
       </div>
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
-        <span className="font-semibold lg:text-2xl">Estratégia e Planejamento</span>
+        <span className="text-2xl font-semibold">Estratégia e Planejamento</span>
         <p>
           Parti primeiramente para a prototipação de todas as possíveis páginas que aquele
           sistema deveria ter, atentando a cada um dos requisitos levantados. No entanto,
@@ -134,7 +135,7 @@ export default function CompanyStatistics(): JSX.Element {
             pontos:
           </p>
 
-          <div className="rounded-md p-9 font-semibold">
+          <div className="rounded-md p-3 font-semibold md:p-9">
             <ul className="list-disc space-y-3 px-6 lg:text-sm">
               <li>Os relatórios devem ser filtrados por ano, mês e tipo</li>
               <li>
@@ -170,7 +171,7 @@ export default function CompanyStatistics(): JSX.Element {
             Desenvolvimento e Implementação
           </span>
 
-          <div className="rounded-md p-9">
+          <div className="rounded-md p-3 lg:p-9">
             <span className="mb-3 block lg:text-xl">Ferramentas</span>
             <ul className="mb-6 list-disc space-y-3 px-6 lg:text-sm">
               <li>
@@ -251,7 +252,7 @@ export default function CompanyStatistics(): JSX.Element {
                 </a>
               </li>
             </ul>
-            <p className="bg-gray-200 p-3 font-semibold text-blue-950">
+            <p className="rounded-md bg-gray-200 p-3 font-semibold text-blue-950">
               <GoAlertFill className="mr-3 inline size-6 text-yellow-700" />O grande
               desafio para mim nesse projeto foi desenvolver autenticação, pois usaríamos
               um sistema baseado em{' '}
@@ -270,8 +271,8 @@ export default function CompanyStatistics(): JSX.Element {
       </div>
 
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
-        <span className="font-semibold lg:text-2xl">Resultados e Impacto</span>
-        <section className="space-y-3 rounded-md p-9">
+        <span className="text-2xl font-semibold">Resultados e Impacto</span>
+        <section className="space-y-3 rounded-md p-3 lg:p-9">
           <p>
             Os impactos desse novo sistema foram significativos para os que precisavam
             gerenciar ou acessar esses relatórios, veja:
@@ -303,8 +304,8 @@ export default function CompanyStatistics(): JSX.Element {
       </div>
 
       <div className="mx-auto space-y-3 text-white lg:w-3/4">
-        <span className="font-semibold lg:text-2xl">Ferramentas usadas</span>
-        <section className="space-y-3 rounded-md p-9">
+        <span className="text-2xl font-semibold">Ferramentas usadas</span>
+        <section className="space-y-3 rounded-md p-3 lg:p-9">
           <p>
             Aqui estão algumas das ferramentas que usei para o processo de construção da
             aplicação:
@@ -388,7 +389,7 @@ export default function CompanyStatistics(): JSX.Element {
         </section>
       </div>
       <div className="mx-auto space-y-3 border-b border-white/25 pb-[72px] text-white lg:w-3/4">
-        <span className="font-semibold lg:text-2xl">Layout Final Do Projeto</span>
+        <span className="text-2xl font-semibold">Layout Final Do Projeto</span>
         <p>
           Esse projeto não tem acesso publico, como mencionado o acesso é por meio de
           user/password. Mas você pode ver o projeto no figma clicando na imagem abaixo.
