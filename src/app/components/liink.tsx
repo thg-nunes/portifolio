@@ -1,12 +1,13 @@
 'use client'
+import { ReactNode } from 'react'
 import { Link } from 'react-scroll'
 export type LinkProps = {}
 
 export const LinkComponent = ({
   elementId,
-  linkText,
+  children,
 }: {
-  linkText: string
+  children: ReactNode
   elementId: string
 }): JSX.Element => {
   return (
@@ -20,7 +21,7 @@ export const LinkComponent = ({
       className="leading-[48px]"
       onClick={() => history.pushState(null, '', elementId)}
     >
-      {linkText}
+      {children}
     </Link>
   )
 }

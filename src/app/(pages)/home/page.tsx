@@ -9,7 +9,10 @@ import { Experiences } from '../../components/experiences'
 export default function Home() {
   return (
     <main>
-      <div className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between gap-6 px-4 py-10 text-white md:flex-row">
+      <div
+        className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between gap-6 px-4 py-10 text-white md:flex-row"
+        id="sobre-mim"
+      >
         <section className="flex w-3/4 flex-col gap-8 md:gap-12 md:py-12">
           <div className="flex flex-col md:gap-3">
             <section className="flex h-max gap-3">
