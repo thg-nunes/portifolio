@@ -7,9 +7,9 @@ import { appRoutes } from '@/src/utils/appRouts'
 import { useState } from 'react'
 
 const MENU_STYLE = {
-  open: 'fixed right-0 flex h-svh w-4/5 z-10 flex-col gap-4 bg-blue-950/90 transition-all duration-700 md:relative md:right-0 md:h-12 md:flex-row md:items-center md:bg-transparent',
+  open: 'fixed right-0 flex h-svh w-4/5 z-10 flex-col gap-4 bg-blue-950/90 transition-all duration-700 md:relative md:right-0 md:w-full md:h-12 md:flex-row md:items-center md:bg-transparent',
   close:
-    'absolute -right-full flex h-svh w-4/5 flex-col gap-4 bg-blue-950/90 transition-all duration-700 md:relative md:right-0 md:h-12 md:flex-row md:items-center md:bg-transparent',
+    'absolute -right-full flex h-svh w-4/5 flex-col gap-4 bg-blue-950/90 transition-all duration-700 md:relative md:w-auto md:right-0 md:h-12 md:flex-row md:items-center md:bg-transparent',
 }
 
 export const MenuMobile = (): JSX.Element => {
@@ -28,8 +28,7 @@ export const MenuMobile = (): JSX.Element => {
           <LinkComponent elementId={elementId}>
             <li
               key={elementId}
-              onClick={() => setMenuIsOpen(!menuIsOpen)}
-              className=" w-full cursor-pointer px-3 text-center font-semibold duration-300 hover:bg-gray-450 hover:text-white dark:text-white md:h-full md:text-sm md:hover:bg-gray-700 lg:text-base"
+              className="md:text-smlg:text-base w-full cursor-pointer px-6 text-center font-semibold duration-300 md:h-full"
             >
               {linkText}
             </li>

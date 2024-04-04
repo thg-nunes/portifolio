@@ -18,7 +18,7 @@ export const LinkComponent = ({
       smooth={true}
       offset={-70}
       duration={500}
-      className="leading-[48px]"
+      className="py-2 leading-[48px] hover:bg-gray-450 hover:text-white  md:hover:bg-gray-700"
       onClick={() => history.pushState(null, '', elementId)}
     >
       {children}
