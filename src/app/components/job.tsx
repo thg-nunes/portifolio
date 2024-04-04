@@ -9,8 +9,9 @@ export type JobProps = {
   itemsDirection?: 'row' | 'reverse'
 }
 const _itemsDirection = {
-  row: 'mx-auto flex max-w-7xl items-center justify-around',
-  reverse: 'mx-auto flex max-w-7xl flex-row-reverse items-center justify-around',
+  row: 'mx-auto flex flex-col-reverse gap-3 max-w-7xl items-center justify-around md:flex-row',
+  reverse:
+    'mx-auto flex max-w-7xl flex-col-reverse gap-3 flex-row-reverse items-center justify-around md:flex-row-reverse',
 }
 
 export const Job = ({
@@ -36,7 +37,7 @@ export const Job = ({
           ))}
         </div>
         <p>{shortDesctiption}</p>
-        <a href={jobLink} className="w-max hover:underline">
+        <a href={jobLink} className="w-max underline lg:no-underline lg:hover:underline">
           ver projeto
         </a>
       </section>

@@ -20,7 +20,7 @@ export const Experiences = ({
   jobInfo,
 }: ExperiencesProps): JSX.Element => {
   return (
-    <section className="mx-auto flex flex-col justify-between gap-4 rounded-md bg-gray-50 p-8 shadow-md md:w-3/4 md:flex-row md:gap-0">
+    <section className="mx-auto flex flex-col justify-between gap-4 rounded-md bg-gray-50 p-8 shadow-md md:w-11/12 md:flex-row md:gap-0 lg:w-3/4">
       <p className="text-2xl font-bold text-green-550">{company}</p>
       <p className="text-bold block text-sm md:hidden">
         {date.start} - {date.end}
