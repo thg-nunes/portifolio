@@ -35,7 +35,7 @@ export default function Home() {
           <a
             download
             href="/currículo-front-end.pdf"
-            className="bg-rose-500 hover:bg-rose-500/80 hidden w-max rounded-md p-2 px-6 text-xs font-bold capitalize text-white hover:transition-all hover:duration-200 md:block lg:text-base"
+            className="hidden w-max rounded-md bg-rose-500 p-2 px-6 text-xs font-bold capitalize text-white hover:bg-rose-500/80 hover:transition-all hover:duration-200 md:block lg:text-base"
           >
             download CV
           </a>
@@ -57,25 +57,43 @@ export default function Home() {
             Aqui está um rápido resumo das minhas experiências mais recentes
           </p>
         </section>
-        <Experiences
-          company="JUCEMA"
-          date={{
-            start: 'Maio de 2021',
-            end: 'Abril de 2024',
-          }}
-          jobFunction="Estagiário Front-End"
-          jobInfo={{
-            situation:
-              'A empresa precisava atualizar uma página de dados estatísticos usada para obter algumas informações',
-            action:
-              'Projetei a interface do usuário, escrevi código front-end e back-end, e otimizei o desempenho do site usando cache de requisições',
-            task: 'Desenvolvimento de um site responsivo usando ReactJs integrado com uma api conectada ao banco de dados Pinot',
-            result:
-              'O painel empresarial foi lançado com sucesso e foi um dos serviços que serviu como modelo para as demais Juntas comerciais do país na construção de um portal nacional de informações.',
-          }}
-        />
+        <div className="flex flex-col gap-6">
+          <Experiences
+            company="JUCEMA"
+            date={{
+              start: 'Maio de 2021',
+              end: 'Abril de 2024',
+            }}
+            jobFunction="Estagiário Front-End"
+            jobInfo={{
+              situation:
+                'A empresa precisava atualizar uma página de dados estatísticos usada para obter algumas informações',
+              action:
+                'Projetei a interface do usuário, escrevi código front-end e back-end, e otimizei o desempenho do site usando cache de requisições',
+              task: 'Desenvolvimento de um site responsivo usando ReactJs integrado com uma api conectada ao banco de dados Pinot',
+              result:
+                'O painel empresarial foi lançado com sucesso e foi um dos serviços que serviu como modelo para as demais Juntas comerciais do país na construção de um portal nacional de informações.',
+            }}
+          />
+          <Experiences
+            company="Linuxell"
+            date={{
+              start: 'Abril de 2024',
+              end: 'Atual',
+            }}
+            jobFunction="Desenvolvedor Front-End | MEI"
+            jobInfo={{
+              situation:
+                'A empresa contém páginas que precisam de manutenção ou novas implementações, além de precisar criar novos projetos quando necessário.',
+              action:
+                'Entender os requisítos de cada projeto, projetar e implementar interfaces de usuário através das linhas de código e auxiliar desenvolvedores menos experientes no início de sua jornada.',
+              task: 'Dar mantenção nas páginas existentes e/ou criar novos projetos de forma responsiva e performática.',
+              result:
+                'Entraga de páginas com novas features e layouts, além de entregar também novos projetos que não existiam na empresa a qual o serviço é prestado.',
+            }}
+          />
+        </div>
       </div>
-
       <div className="space-y-20 lg:py-8" id="trabalhos">
         <section className="mx-auto mb-10 flex max-w-7xl flex-col items-center gap-4">
           <p className="w-max rounded-full bg-gray-300 px-5 py-1 text-xs font-semibold text-gray-700 lg:text-xl">
