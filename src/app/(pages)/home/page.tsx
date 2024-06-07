@@ -8,10 +8,13 @@ import { Experiences } from '../../components/experiences'
 
 export default function Home() {
   return (
-    <main>
-      <div className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between px-4 py-10 text-white md:flex-row">
+    <main className="py-10">
+      <div
+        className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between gap-6 px-4 py-10 text-white md:flex-row"
+        id="sobre-mim"
+      >
         <section className="flex w-3/4 flex-col gap-8 md:gap-12 md:py-12">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col md:gap-3">
             <section className="flex h-max gap-3">
               <h2 className="text-2xl font-bold md:text-3xl lg:text-5xl">
                 Olá, seja bem vindo
@@ -94,6 +97,7 @@ export default function Home() {
           />
         </div>
       </div>
+
       <div className="space-y-20 lg:py-8" id="trabalhos">
         <section className="mx-auto mb-10 flex max-w-7xl flex-col items-center gap-4">
           <p className="w-max rounded-full bg-gray-300 px-5 py-1 text-xs font-semibold text-gray-700 lg:text-xl">

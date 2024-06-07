@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           className="flex flex-col items-center space-y-6 px-4 py-16 text-white md:px-0"
           id="contato"
         >
-          <section className="mx-auto flex max-w-7xl items-center justify-center gap-3">
+          <section className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-3 md:flex-row">
             <div className="flex items-center gap-2">
               <AiOutlineMail className="h-7 w-7" />
               desenvolvedor.nunes@gmail.com
