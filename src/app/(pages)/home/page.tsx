@@ -84,7 +84,7 @@ export default function Home() {
               start: 'Abril de 2024',
               end: 'Atual',
             }}
-            jobFunction="Desenvolvedor Front-End | MEI"
+            jobFunction="Desenvolvedor Front-End (PJ)"
             jobInfo={{
               situation:
                 'A empresa contém páginas que precisam de manutenção ou novas implementações, além de precisar criar novos projetos quando necessário.',
